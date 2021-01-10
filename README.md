@@ -11,13 +11,13 @@ This project consists of three main components:
 
 1. Dataset of 143,000 news articles scraped from 15 American news publications. Dated 2015-2017. [Kaggle link](https://www.kaggle.com/snapcrack/all-the-news)
 
-2. Set of 654 words (lemmatized) that were determined to commonly induce bias ([Linguistic Models for Analyzing and Detecting Biased Language](https://web.stanford.edu/~jurafsky/pubs/neutrality.pdf), Stanford NLP Research Group
+2. Set of 654 words (lemmatized) that were determined to commonly induce bias ([Linguistic Models for Analyzing and Detecting Biased Language](https://web.stanford.edu/~jurafsky/pubs/neutrality.pdf), Stanford NLP Research Group)
 
 ____
 
 ## News Website Classifier
 
-I wanted to determine if, by using NLP techniques, I could create a classifier that could predict the political lean of a given news article based on its text alone. However, I first needed to generate some labels for my article text since the original dataset had no such labels.
+I wanted to determine if - by using NLP techniques - I could create a classifier that could predict the political lean of a given news article based on its text alone. However, I first needed to generate some labels for my article text since the original dataset had no such labels.
 
 #### MediaBiasFactCheck.com
 
@@ -29,11 +29,11 @@ _"Media Bias/Fact Check (MBFC), founded in 2015, is an independent online media 
 
 I used political spectrum labels that the above website assigned for each of the publications in my dataset.
 
-_Disclaimer: This project is not affiliated with any of the websites mentioned in any way, nor is it meant to reflect any political views of its author._
+_Disclaimer: This project is not affiliated with any of the websites mentioned in any way, nor is it meant to reflect any political views of the author._
 
 #### Naive Bayes Classifier
 
-I vectorized the article text corpus using TfIdf-Vectorizer and then tested a number of Naive Bayes classification systems, attempting to predict which of the six political bias labels the article fell under.
+I vectorized the article text corpus using `tfidf-vectorizer` and then tested a number of Naive Bayes classification systems, attempting to predict which of the six political bias labels the article fell under.
 
 * Left
 * Left-Center
